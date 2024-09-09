@@ -13,14 +13,13 @@ rgb(85, 153, 221)
 
 */
 
-h1 {
+.header {
   font-family: 'Playfair', cursive;
   font-weight:300;
   color: #5599dd;
   text-align: center;
-
-
 }
+
  
  /*-----GOOGLE FONTS-----*/
 
