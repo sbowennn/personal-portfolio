@@ -9,10 +9,18 @@ https://www.w3schools.com/colors/colors_hsl.asp - COLOURS
  
 hsl(210, 67%, 60%)
 rgb(85, 153, 221)
-#5599dd
+#5599dd 
 
 */
- 
+
+h1 {
+  font-family: 'Playfair', cursive;
+  font-weight:300;
+  color: #5599dd;
+  text-align: center;
+
+
+}
  
  /*-----GOOGLE FONTS-----*/
 
