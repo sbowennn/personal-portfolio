@@ -2,7 +2,7 @@
 https://unicons.iconscout.com/release/v4.0.8/css/thinline.css
 
 https://fonts.google.com/ - FONTS <style>
-@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair:opsz,wdth@5..1200,112.5&display=swap');
 </style>
 
 https://www.w3schools.com/colors/colors_hsl.asp - COLOURS 
@@ -13,13 +13,28 @@ rgb(85, 153, 221)
 
 */
 
+
+
 .header {
-  font-family: 'Playfair', cursive;
-  font-weight:300;
-  color: #5599dd;
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 112.5;
+  color:white;
+  background-color: #5599dd;
   text-align: center;
 }
 
+.main {
+  background-color: #5599dd;
+
+}
+
+.footer {
+  background-color: #5599dd;
+}
  
  /*-----GOOGLE FONTS-----*/
 
@@ -35,7 +50,96 @@ rgb(85, 153, 221)
 
   /*--MARGINS--*/
 
-  /*--Z INDEX--*/
+  /*--Z INDEX ??--*/
+  z-tooltip: 10
+  z-fixed: 100
+  z-modal: 1000
+
+  /*--FONT SIZE FOR LARGE DEVICES ?--*/
+  @media screen and (min-width: 968px) {
+    :root {
+        
+    }
+  }
+
+  /*--VARIABLES DARK MODE--*/
+
+  /*--BUTTON DARK/LIGHT--*/
+
+  /*--BASE--*/
+
+  *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+
+  body{
+    margin: 0 0 0 0;
+    font-family: ;
+    font-size: ;
+    background-color: ;
+    color: ;
+  }
+
+  h1,h2,h3,h4{
+    color: ;
+    font-weight: ;
+  }
+
+  ul{
+    list-style: ;
+  
+  }
+
+  a{
+    text-decoration: ;
+  
+  }
+
+  img{
+    max-width: ;
+    height: ;
+  }
+
+
+
+  /*--REUSABLE CSS CLASSES--*/
+  .section{
+    padding: ;
+  }
+
+  .section__title{
+    font-size: ;
+  }
+
+  .section__subtitle{
+    display: ;
+    font-size: ;
+    margin-bottom: ;
+  }
+
+  .section__title,
+  .section__subtitle{
+    text-align: ;
+  }
+
+
+  /*--LAYOUT--*/
+
+  .container{
+    max-width: ;
+  }
+
+  /*--NAV--*/
+
+  /* SHOW MENU */
+
+  /*----*/
 
   /*----*/
 
