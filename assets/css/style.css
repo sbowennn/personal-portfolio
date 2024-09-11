@@ -1,5 +1,8 @@
- /* https://iconscout.com/unicons - ICONS 
+
+/* https://iconscout.com/unicons - ICONS 
 https://unicons.iconscout.com/release/v4.0.8/css/thinline.css
+
+<script src="https://kit.fontawesome.com/936b0b85c7.js" crossorigin="anonymous"></script>
 
 https://fonts.google.com/ - FONTS <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair:opsz,wdth@5..1200,112.5&display=swap');
@@ -133,6 +136,10 @@ rgb(85, 153, 221)
 
   .container{
     max-width: ;
+  }
+  .grid{
+    display: grid;
+    gap: 1.5rem;
   }
 
   /*--NAV--*/
