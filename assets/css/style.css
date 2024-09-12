@@ -14,43 +14,44 @@ hsl(210, 67%, 60%)
 rgb(85, 153, 221)
 #5599dd 
 
-background-color: #5599DD;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3ClinearGradient id='a' 
-gradientUnits='userSpaceOnUse' x1='600' y1='25' x2='600' y2='777'%3E%3Cstop offset='0' stop-color='%235599DD'/%3E%3Cstop offset='1' stop-color='%232673C0'/%3E%3C/linearGradient%3E%3ClinearGradient 
-id='b' gradientUnits='userSpaceOnUse' x1='650' y1='25' x2='650' y2='777'%3E%3Cstop offset='0' stop-color='%234f96dc'/%3E%3Cstop offset='1' stop-color='%23287acc'/%3E%3C/linearGradient%3E%3ClinearGradient 
-id='c' gradientUnits='userSpaceOnUse' x1='700' y1='25' x2='700' y2='777'%3E%3Cstop offset='0' stop-color='%234992db'/%3E%3Cstop offset='1' stop-color='%232c81d5'/%3E%3C/linearGradient%3E%3ClinearGradient 
-id='d' gradientUnits='userSpaceOnUse' x1='750' y1='25' x2='750' y2='777'%3E%3Cstop offset='0' stop-color='%23448fda'/%3E%3Cstop offset='1' stop-color='%233888d8'/%3E%3C/linearGradient%3E%3ClinearGradient 
-id='e' gradientUnits='userSpaceOnUse' x1='800' y1='25' x2='800' y2='777'%3E%3Cstop offset='0' stop-color='%233e8bd9'/%3E%3Cstop offset='1' stop-color='%23448eda'/%3E%3C/linearGradient%3E%3ClinearGradient 
-id='f' gradientUnits='userSpaceOnUse' x1='850' y1='25' x2='850' y2='777'%3E%3Cstop offset='0' stop-color='%233888d7'/%3E%3Cstop offset='1' stop-color='%234f95dc'/%3E%3C/linearGradient%3E%3ClinearGradient 
-id='g' gradientUnits='userSpaceOnUse' x1='900' y1='25' x2='900' y2='777'%3E%3Cstop offset='0' stop-color='%233284d6'/%3E%3Cstop offset='1' stop-color='%235b9cdf'/%3E%3C/linearGradient%3E%3ClinearGradient 
-id='h' gradientUnits='userSpaceOnUse' x1='950' y1='25' x2='950' y2='777'%3E%3Cstop offset='0' stop-color='%232c81d5'/%3E%3Cstop offset='1' stop-color='%2367a3e1'/%3E%3C/linearGradient%3E%3ClinearGradient 
-id='i' gradientUnits='userSpaceOnUse' x1='1000' y1='25' x2='1000' y2='777'%3E%3Cstop offset='0' stop-color='%232a7dd1'/%3E%3Cstop offset='1' stop-color='%2372aae3'/%3E%3C/linearGradient%3E%3ClinearGradient 
-id='j' gradientUnits='userSpaceOnUse' x1='1050' y1='25' x2='1050' y2='777'%3E%3Cstop offset='0' stop-color='%23287acb'/%3E%3Cstop offset='1' stop-color='%237eb1e5'/%3E%3C/linearGradient%3E%3ClinearGradient 
-id='k' gradientUnits='userSpaceOnUse' x1='1100' y1='25' x2='1100' y2='777'%3E%3Cstop offset='0' stop-color='%232776c6'/%3E%3Cstop offset='1' stop-color='%2389b8e8'/%3E%3C/linearGradient%3E%3ClinearGradient 
-id='l' gradientUnits='userSpaceOnUse' x1='1150' y1='25' x2='1150' y2='777'%3E%3Cstop offset='0' stop-color='%232673C0'/%3E%3Cstop offset='1' stop-color='%2395BFEA'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg %3E%3Crect 
-fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' x='100' width='1100' height='800'/%3E%3Crect fill='url(%23c)' x='200' width='1000' height='800'/%3E%3Crect fill='url(%23d)' x='300' width='900' 
-height='800'/%3E%3Crect fill='url(%23e)' x='400' width='800' height='800'/%3E%3Crect fill='url(%23f)' x='500' width='700' height='800'/%3E%3Crect fill='url(%23g)' x='600' width='600' height='800'/%3E%3Crect fill='url(%23h)' 
-x='700' width='500' height='800'/%3E%3Crect fill='url(%23i)' x='800' width='400' height='800'/%3E%3Crect fill='url(%23j)' x='900' width='300' height='800'/%3E%3Crect fill='url(%23k)' x='1000' width='200' height='800'/%3E%3Crect 
-fill='url(%23l)' x='1100' width='100' height='800'/%3E%3C/g%3E%3C/svg%3E");
-background-attachment: fixed;
-background-size: cover;
+/*[popover] {
+        font-size: 1.2rem;
+        padding: 10px;
+      }
+      
+      [popover]:popover-open {
+        opacity: 1;
+        transform: scaleX(1);
+      }
+      
+      [popover] {
+        /* Final state of the exit animation */
+        /*opacity: 0;
+        transform: scaleX(0);
+      
+        transition-property: opacity, transform, overlay, display;
+        transition-duration: 0.7s;
+        transition-behavior: allow-discrete;
+        /* Using the shorthand transition property, we could write:
+          transition: 
+            opacity 0.7s,
+            transform 0.7s,
+            overlay 0.7s allow-discrete,
+            display 0.7s allow-discrete;
+      
+          or even:
+          transition: all 0.7s allow-discrete;
+        */
+      /* Needs to be included after the previous [popover]:popover-open 
+         rule to take effect, as the specificity is the same */
+      /*@starting-style {
+          opacity: 0;
+          transform: scaleX(0);
+      }
+      
+    }*/
 
-<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 1200 800'><rect fill='#5599DD' width='1200' height='800'/><defs><linearGradient id='a' gradientUnits='userSpaceOnUse' 
-x1='600' y1='25' x2='600' y2='777'><stop offset='0' stop-color='#5599DD'/><stop offset='1' stop-color='#2673C0'/></linearGradient><linearGradient id='b' gradientUnits='userSpaceOnUse' x1='650' y1='25' 
-x2='650' y2='777'><stop offset='0' stop-color='#4f96dc'/><stop offset='1' stop-color='#287acc'/></linearGradient><linearGradient id='c' gradientUnits='userSpaceOnUse' x1='700' y1='25' x2='700' y2='777'><stop offset='0' 
-stop-color='#4992db'/><stop offset='1' stop-color='#2c81d5'/></linearGradient><linearGradient id='d' gradientUnits='userSpaceOnUse' x1='750' y1='25' x2='750' y2='777'><stop offset='0' stop-color='#448fda'/><stop offset='1' 
-stop-color='#3888d8'/></linearGradient><linearGradient id='e' gradientUnits='userSpaceOnUse' x1='800' y1='25' x2='800' y2='777'><stop offset='0' stop-color='#3e8bd9'/><stop offset='1' stop-color='#448eda'/></linearGradient><linearGradient 
-id='f' gradientUnits='userSpaceOnUse' x1='850' y1='25' x2='850' y2='777'><stop offset='0' stop-color='#3888d7'/><stop offset='1' stop-color='#4f95dc'/></linearGradient><linearGradient id='g' gradientUnits='userSpaceOnUse' x1='900' y1='25' 
-x2='900' y2='777'><stop offset='0' stop-color='#3284d6'/><stop offset='1' stop-color='#5b9cdf'/></linearGradient><linearGradient id='h' gradientUnits='userSpaceOnUse' x1='950' y1='25' x2='950' y2='777'><stop offset='0' 
-stop-color='#2c81d5'/><stop offset='1' stop-color='#67a3e1'/></linearGradient><linearGradient id='i' gradientUnits='userSpaceOnUse' x1='1000' y1='25' x2='1000' y2='777'><stop offset='0' stop-color='#2a7dd1'/><stop offset='1' 
-stop-color='#72aae3'/></linearGradient><linearGradient id='j' gradientUnits='userSpaceOnUse' x1='1050' y1='25' x2='1050' y2='777'><stop offset='0' stop-color='#287acb'/><stop offset='1' stop-color='#7eb1e5'/></linearGradient><linearGradient 
-id='k' gradientUnits='userSpaceOnUse' x1='1100' y1='25' x2='1100' y2='777'><stop offset='0' stop-color='#2776c6'/><stop offset='1' stop-color='#89b8e8'/></linearGradient><linearGradient id='l' gradientUnits='userSpaceOnUse' x1='1150' y1='25' 
-x2='1150' y2='777'><stop offset='0' stop-color='#2673C0'/><stop offset='1' stop-color='#95BFEA'/></linearGradient></defs><g ><rect fill='url(#a)' width='1200' height='800'/><rect fill='url(#b)' x='100' width='1100' height='800'/><rect fill='url(#c)' 
-x='200' width='1000' height='800'/><rect fill='url(#d)' x='300' width='900' height='800'/><rect fill='url(#e)' x='400' width='800' height='800'/><rect fill='url(#f)' x='500' width='700' height='800'/><rect fill='url(#g)' x='600' width='600' 
-height='800'/><rect fill='url(#h)' x='700' width='500' height='800'/><rect fill='url(#i)' x='800' width='400' height='800'/><rect fill='url(#j)' x='900' width='300' height='800'/><rect fill='url(#k)' x='1000' width='200' height='800'/><rect fill='url(#l)' 
-x='1100' width='100' height='800'/></g></svg>
 
-*/
 
 .header {
   font-family: "Open Sans", sans-serif;
@@ -79,7 +80,7 @@ x='1100' width='100' height='800'/></g></svg>
 
  /*-----VARIABLES CSS-----*/
  :root {
-  --header-height: 3rem;
+  --header-height: 2rem;
   color:#5599dd; 
 
   /*--COLOURS--*/
@@ -182,7 +183,7 @@ x='1100' width='100' height='800'/></g></svg>
     font-size: var(--h3-font-size);  
   }
 
-  h2 {
+  h2 {  
     color: repeating-linear-gradient(from 90deg at 50% 50%, #5599dd 0%, #ccccff 100%);
   }
 
@@ -247,7 +248,7 @@ x='1100' width='100' height='800'/></g></svg>
       height: var(--header-height);
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: left;
   }
 
   .nav__logo,
@@ -261,7 +262,7 @@ x='1100' width='100' height='800'/></g></svg>
   }
 
   .nav__toggle{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     cursor: pointer;
   }
 
@@ -280,46 +281,6 @@ x='1100' width='100' height='800'/></g></svg>
       box-shadow: 0 -1px 4px rgba(0, 0, 0, .2);
       border-radius: 1.5rem 1.5rem 0 0;
       transition: all 0.7s allow-discrete;
-      /*[popover] {
-        font-size: 1.2rem;
-        padding: 10px;
-      }
-      
-      [popover]:popover-open {
-        opacity: 1;
-        transform: scaleX(1);
-      }
-      
-      [popover] {
-        /* Final state of the exit animation */
-        /*opacity: 0;
-        transform: scaleX(0);
-      
-        transition-property: opacity, transform, overlay, display;
-        transition-duration: 0.7s;
-        transition-behavior: allow-discrete;
-        /* Using the shorthand transition property, we could write:
-          transition: 
-            opacity 0.7s,
-            transform 0.7s,
-            overlay 0.7s allow-discrete,
-            display 0.7s allow-discrete;
-      
-          or even:
-          transition: all 0.7s allow-discrete;
-        */
-      
-      
-      /* Needs to be included after the previous [popover]:popover-open 
-         rule to take effect, as the specificity is the same */
-      /*@starting-style {
-         
-          opacity: 0;
-          transform: scaleX(0);
-      
-      }
-      
-    }*/
   }
 }
 
@@ -330,7 +291,7 @@ x='1100' width='100' height='800'/></g></svg>
 
   .nav__link{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     align-items: center;
     font-size: var(--small-font-size);
     color: var(--title-color);
@@ -342,13 +303,13 @@ x='1100' width='100' height='800'/></g></svg>
   }
 
   .nav__icon{
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 
   .nav__close{
     position: absolute;
     right: 1.3rem;
-    bottom: 0.5rem;
+    bottom: 0.75rem;
     font-size: 1.5rem;
     cursor: pointer;
     color: var(--first-color);
