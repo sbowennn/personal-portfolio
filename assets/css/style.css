@@ -16,9 +16,6 @@ rgb(85, 153, 221)
 
 */
 
-
-
-
 .header {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -129,70 +126,70 @@ rgb(85, 153, 221)
   body{
     margin: 0 0 var(--header-height) 0;
     font-family: var(--body-font);
-    font-size: 400;
-    background-color: #5599dd;
-    color: white;
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
   }
 
   h1,h3{
-    color: white;
+    color: var(--title-color);
   }
 
   h1{
-    font-weight: 300;
+    font-weight: var(--font-semi-bold);
     font-size: var(--big-font-size);
 
   }
 
   h3{
-    font-weight: 600;
+    font-weight: 400;
     font-size: var(--h2-font-size);
   
   }
 
 
   ul{
-    list-style: ;
+    list-style: none;
   
   }
 
   a{
-    text-decoration: ;
+    text-decoration: none;
   
   }
 
   img{
-    max-width: ;
-    height: ;
+    max-width: 100%;
+    height: auto;
   }
-
-
 
   /*--REUSABLE CSS CLASSES--*/
   .section{
-    padding: ;
+    padding: 2rem 0 4rem;
   }
 
   .section__title{
-    font-size: ;
+    font-size: var(--h1-font-size);
   }
 
   .section__subtitle{
-    display: ;
-    font-size: ;
-    margin-bottom: ;
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-3);
   }
 
   .section__title,
   .section__subtitle{
-    text-align: ;
+    text-align: center;
   }
 
 
   /*--LAYOUT--*/
 
   .container{
-    max-width: ;
+    max-width: 768px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
   }
   .grid{
     display: grid;
@@ -219,7 +216,7 @@ rgb(85, 153, 221)
 
   .nav__logo,
   .nav__toggle{
-    color: ;
+    color: white;
   }
 
   /* SHOW MENU */
