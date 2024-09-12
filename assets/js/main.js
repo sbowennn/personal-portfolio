@@ -5,20 +5,20 @@ const navMenu = document.getElementById('nav-menu'),
 
 /*--SHOW--*/
 if(navToggle){
-  navToggle.addEventListener('click', () =>{
+  navToggle.addEventListener('click', () => {
     navMenu.classList.add('show-menu')
   })
 }
 
 /*--HIDE--*/
 if(navClose){
-  navClose.addEventListener('click', () =>{
+  navClose.addEventListener('click', () => {
     navMenu.classList.remove('show-menu')
   })
 }
 
 /*--REMOVE MOBILE MENU--*/
-const navLink = document.querySelectorAll('nav__link')
+const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
   const navMenu = document.getElementById('nav-menu')
