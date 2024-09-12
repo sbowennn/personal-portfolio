@@ -66,6 +66,7 @@ x='1100' width='100' height='800'/></g></svg>
 
 .main {
   background-color: var(--body-color);
+  text-align: center;
 
 }
 
