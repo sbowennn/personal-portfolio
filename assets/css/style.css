@@ -183,10 +183,6 @@ rgb(85, 153, 221)
     font-size: var(--h3-font-size);  
   }
 
-  h2 {  
-    color: repeating-linear-gradient(from 90deg at 50% 50%, #5599dd 0%, #ccccff 100%);
-  }
-
   ul{
     list-style: none;  
   }
@@ -381,6 +377,7 @@ rgb(85, 153, 221)
 
 .home__career{
   margin-bottom: var(--mb-2);
+  color: linear-gradient(to right, #6699ff 0%, #ff99ff 100%);
 }
 
 .home__scroll{
