@@ -368,12 +368,12 @@ rgb(85, 153, 221)
 }
 
 .home__sentence{
-  font-size: var(--big-font-size);
+  font-size: var(--h3-font-size);
 }
 
 .home__name{
-  font-size: var(--h3-font-size);
-  color: var(--text-color);
+  font-size: var(--big-font-size);
+  color: var(--title-color);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-0-75);
 
