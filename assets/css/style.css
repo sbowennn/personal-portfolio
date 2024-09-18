@@ -84,18 +84,18 @@ rgb(85, 153, 221)
   color:#5599dd; 
 
   /*--COLOURS--*/
-  --hue-color:250;
+  --hue-color:210;
 
   /*--HSL, HEX or RGB colour mode --*/
-  --first-color: hsl(var(--hue-color), 67%, 60%);
-  --first-color-second: hsl(var(--hue-color), 67%, 60%);
-  --first-color-alt: hsl(var(--hue-color), 57%, 53%)
-  --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
-  --title-color: hsl(var(--hue-color), 18%, 15%);
-  --text-color: hsl(var(--hue-color), 18%, 45%);
-  --text-color-light: hsl(var(--hue-color), 18%, 65%);
-  --input-color: hsl(var(--hue-color), 70%, 90%);
-  --body-color: hsl(var(--hue-color), 60%, 90%);
+  --first-color: hsl(var(--hue-color), 67%, 60%); /**/
+  --first-color-second: hsl(var(--hue-color), 67%, 60%); /**/
+  --first-color-alt: hsl(var(--hue-color), 57%, 53%); /*#4387cb*/
+  --first-color-lighter: hsl(var(--hue-color), 92%, 85%); /*#b6d9fc*/
+  --title-color: hsl(var(--hue-color), 18%, 15%); /*#1f262d*/
+  --text-color: hsl(var(--hue-color), 18%, 45%); /*#5e7387*/
+  --text-color-light: hsl(var(--hue-color), 18%, 65%); /*#96a6b6*/
+  --input-color: hsl(var(--hue-color), 70%, 90%); /*#d4e6f7*/
+  --body-color: hsl(var(--hue-color), 60%, 92%); /*#deebf7*/
   --container-color: white;
 
   /*--FONT AND TYPOGRAPHY px or rem mode --*/
