@@ -87,9 +87,9 @@ rgb(85, 153, 221)
   --hue-color: 210;
 
   /*--HSL, HEX or RGB colour mode --*/
-  --first-color: hsl(var(--hue-color), 67%, 60%); /**/
+  --first-color: hsl(var(--hue-color), 85%, 53%); /**/
   --first-color-second: hsl(var(--hue-color), 67%, 60%); /**/
-  --first-color-alt: hsl(var(--hue-color), 57%, 53%); /*#4387cb*/
+  --first-color-alt: hsl(var(--hue-color), 57%, 49%); /*#3671c4*/
   --first-color-lighter: hsl(var(--hue-color), 92%, 85%); /*#b6d9fc*/
   --title-color: hsl(var(--hue-color), 18%, 15%); /*#1f262d*/
   --text-color: hsl(var(--hue-color), 18%, 45%); /*#5e7387*/
@@ -377,7 +377,8 @@ rgb(85, 153, 221)
 
 .home__career{
   margin-bottom: var(--mb-2);
-  background: linear-gradient(to right, #1f57ff 0%, #ff1fe5 100%); /*#1f57ff to #ff1fe5 or #ff52eb*/
+  background: linear-gradient(to right, #1f57ff 0%, #ff1fe5 100%); /* original:  #6699ff 0%, #ff99ff 100%
+  OR update #1f57ff to #ff1fe5 or */
   background-clip: text;
   color: transparent;
 }
