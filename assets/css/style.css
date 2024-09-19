@@ -243,7 +243,7 @@ rgb(85, 153, 221)
       max-width: 968px;
       height: var(--header-height);
       display: flex;
-      justify-content: space-between;
+      justify-content: left;
       align-items: left;
   }
 
