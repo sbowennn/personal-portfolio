@@ -243,7 +243,7 @@ rgb(85, 153, 221)
       max-width: 968px;
       height: var(--header-height);
       display: flex;
-      justify-content: left; /*maybe leave space-between*/
+      justify-content: space-around; /*maybe leave space-between*/
       align-items: left;
   }
 
@@ -268,7 +268,7 @@ rgb(85, 153, 221)
 
   @media screen and (max-width: 767px){
     .nav__menu{
-      position: relative;
+      position: absolute; 
       bottom: 2%;
       left: 0;
       width: 100%;
@@ -281,7 +281,7 @@ rgb(85, 153, 221)
 }
 
   .nav__list{
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /*it was 5fr*/
     gap: 2rem;  
   }
 
