@@ -342,7 +342,7 @@ rgb(85, 153, 221)
   align-items: center;
 }
 
-.home__social{
+.home-social{
   display: grid;
   grid-template-columns: max-content;
   row-gap: var(--s-3);
@@ -357,12 +357,12 @@ rgb(85, 153, 221)
   color: var(--first-color-alt);
 }
 
-.home-picbground{
+.home-img{
   width: 200px;
   fill: var(--first-color)
 }
 
-.home-picbground-img{
+.home-svg-img{
   width: 170px;
 }
 
