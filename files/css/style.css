@@ -10,7 +10,7 @@ https://fonts.google.com/ - FONTS <style>
 
 https://www.w3schools.com/colors/colors_hsl.asp - COLOURS 
  
-hsl(210, 67%, 60%)
+hsl(210, 67%, 60%) - hue color base is 210, change to 340 some time 
 rgb(85, 153, 221)
 #5599dd 
 
@@ -80,7 +80,7 @@ rgb(85, 153, 221)
 
  /*-----VARIABLES CSS-----*/
  :root {
-  --header-height: 2rem;
+  --header-height: 32px;
   color:#5599dd; 
 
   /*--COLOURS--*/
@@ -102,27 +102,30 @@ rgb(85, 153, 221)
   --body-font: "Open Sans", sans-serif;
 
   /*--FONT WEIGHT--*/
-  --big-font-size: 2rem;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1.25rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
+  --big-font-size: 32px;
+  --h1-font-size: 24px;
+  --h2-font-size: 20px;
+  --h3-font-size: 16px;
+  --normal-font-size: 15px;
+  --small-font-size: 14px;
+  --smaller-font-size: 12px;
 
   --font-medium: 500;
   --font-semi-bold: 600;
 
 
   /*--MARGINS--*/
-  --mb-0-25: .25rem;
-  --mb-0-5: .5rem;
-  --mb-0-75: .75rem;
-  --mb-1: 1rem;
-  --mb-1-5: 1.5rem;
-  --mb-2: 2rem;
-  --mb-2-5: 2.5rem;
-  --mb-3: 3rem;
+  --s-0: 4px; /*2rem = 32px, 1rem = 16px, .5rem = 8px...*/
+  --s-1: 8px;
+  --s-2: 12px;
+  --s-3: 16px;
+  --s-4: 20px;
+  --s-5: 24px;
+  --s-6: 28px;
+  --s-7: 32px;
+  --s-8: 36px;
+  --s-9: 40px;
+  --s-10: 48px;
 
   /*--Z INDEX ??--*/
   --z-tooltip: 10;
@@ -134,13 +137,13 @@ rgb(85, 153, 221)
   /*--FONT SIZE FOR LARGE DEVICES ?--*/
   @media screen and (min-width: 968px) {
     :root {
-        --big-font-size: 3rem;
-        --h1-font-size: 2.25rem;
-        --h2-font-size: 1.5rem;
-        --h3-font-size: 1.25rem;
-        --normal-font-size: 1.rem;
-        --small-font-size: .875rem;
-        --smaller-font-size: .813rem;
+        --big-font-size: 48px;
+        --h1-font-size: 36px;
+        --h2-font-size: 24px;
+        --h3-font-size: 20px;
+        --normal-font-size: 16px;
+        --small-font-size: 14px;
+        --smaller-font-size: 13px;
         
     }
   }
@@ -198,21 +201,21 @@ rgb(85, 153, 221)
 
   /*--REUSABLE CSS CLASSES--*/
   .section{
-    padding: 2rem 0 4rem;
+    padding: 32px 0 64px;
   }
 
-  .section__title{
+  .section-title{
     font-size: var(--h1-font-size);
   }
 
-  .section__subtitle{
+  .section-subtitle{
     display: block;
     font-size: var(--small-font-size);
-    margin-bottom: var(--mb-3);
+    margin-bottom: var(--s-8);
   }
 
-  .section__title,
-  .section__subtitle{
+  .section-title,
+  .section-subtitle{
     text-align: center;
   }
 
@@ -221,8 +224,8 @@ rgb(85, 153, 221)
 
   .container{
     max-width: 768px;
-    margin-left: var(--mb-1-5);
-    margin-right: var(--mb-1-5);
+    margin-left: var(--s-4);
+    margin-right: var(--s-4);
   }
   .grid{
     display: flex; /*it was grid and no flex-direction and align-items*/
@@ -249,42 +252,42 @@ rgb(85, 153, 221)
       align-items: left; /*it was left*/
   }
 
-  .nav__logo,
-  .nav__toggle{
+  .nav-logo,
+  .nav-menu{
     color: var(--title-color);
     font-weight: var(--font-medium);   
   }
 
-  .nav__logo:hover{
+  .nav-logo:hover{
     color: var(--first-color);
   }
 
-  .nav__toggle{
-    font-size: 1.2rem;
+  .nav-menu{
+    font-size: var(--h3-font-size);
     cursor: pointer;
   }
 
-  .nav__toggle:hover{
+  .nav-menu:hover{
     color: var(--first-color);
   }
 
   @media screen and (max-width: 767px){
-    .nav__menu{
+    .nav--menu{
       position: fixed; 
       bottom: -100%;
       left: 0%;
       width: 100%;
       background-color: var(--body-color);
-      padding: 2rem 1.5rem 4rem;
+      padding: 32px 24px 64px;
       box-shadow: 0 -1px 4px rgba(0, 0, 0, .2);
-      border-radius: 1.5rem 1.5rem 0 0;
+      border-radius: 24px 24px 0 0;
       transition: all 0.7s allow-discrete;
   }
 }
 
-  .nav__list{
+  .nav-list{
     grid-template-columns: repeat(3, 1fr); /*it was 5fr*/
-    gap: 2rem;  
+    gap: var(--s-6);  
   }
 
   .nav__link{
@@ -298,24 +301,24 @@ rgb(85, 153, 221)
     font-weight: var(--font-medium);
   }
 
-  .nav__link:hover{
+  .nav-link:hover{
     color: var(--first-color);
   }
 
-  .nav__icon{
-    font-size: 1.4rem;
+  .nav-icon{
+    font-size: var(--s-4);
   }
 
   .nav__close{
     position: absolute;
-    right: 1.3rem;
-    bottom: 0.75rem;
-    font-size: 1.5rem;
+    right: var(--s-4);
+    bottom: var(--s-3);
+    font-size: var(--h2-font-size);
     cursor: pointer;
     color: var(--first-color);
   }
 
-  .nav__close:hover{
+  .nav-close:hover{
     color: var(--first-color-alt);
   }
 
@@ -329,96 +332,96 @@ rgb(85, 153, 221)
   /*--BACKGROUNG HEADER--*/
 
   /*--HOME--*/
-.home__container{
-  gap: 1rem;
+.home-container{
+  gap: var(--s-3);
 }
 
 .home__content{
   grid-template-columns: .5fr 3fr;
-  padding-top: 3.5rem;
+  padding-top: var(--s-10);
   align-items: center;
 }
 
 .home__social{
   display: grid;
   grid-template-columns: max-content;
-  row-gap: 1rem;
+  row-gap: var(--s-3);
 }
 
-.home__social-icon{
-  font-size: 1.25rem;
+.home-social-icon{
+  font-size: var(--s-4);
   color: var(--first-color);
 }
 
-.home__social-icon:hover{
+.home-social-icon:hover{
   color: var(--first-color-alt);
 }
 
-.home__blob{
+.home-picbground{
   width: 200px;
   fill: var(--first-color)
 }
 
-.home__blob-img{
+.home-picbground-img{
   width: 170px;
 }
 
-.home__data{
+.home-data{
   grid-column: 1/3;
 }
 
-.home__sentence{
+.home-phrase{
   font-size: var(--h3-font-size);
 }
 
-.home__name{
+.home-name{
   font-size: var(--big-font-size);
   color: var(--title-color);
   font-weight: var(--font-medium);
-  margin-bottom: var(--mb-0-75);
+  margin-bottom: var(--s-5);
 
 }
 
-.home__career{
-  margin-bottom: var(--mb-2);
+.home-career{
+  margin-bottom: var(--s-7);
   background: linear-gradient(to right, #1f57ff 0%, #ff1fe5 100%); /* original:  #6699ff 0%, #ff99ff 100%
   OR update #1f57ff to #ff1fe5 or */
   background-clip: text;
   color: transparent;
 }
 
-.home__scroll{
+.home--scroll{
   display: none;
 }
 
-.home__scroll-button{
+.home-scroll-button{
   color: var(--first-color);
   transition: .3s;
 }
 
-.home__scroll-button:hover{
-  transform: translateY(0.25rem);
+.home-scroll-button:hover{
+  transform: translateY(4px);
 }
-.home__scroll-mouse{
-  font-size: 2rem;
+.home-scroll-mouse{
+  font-size: var(--big-font-size);
 }
-.home__scroll-name{
+.home-scroll-name{
   font-size: var(--small-font-size);
   color: var(--title-color);
   font-weight: var(--font-medium);
-  margin-right: var(--mb-0-25);
+  margin-right: var(--s-0);
 }
 
-.home__scroll-arrow{
-  font-size: 1.25rem;
+.home-scroll-arrow{
+  font-size: var(--s-4);
 }
   /*--BTNS--*/
 .button{
   display: inline-block;
   background-color: var(--first-color);
   color: #fff;
-  padding: 12px; /*1rem = 16px, .5rem = 8px...*/
-  border-radius: .5rem;
+  padding: var(--s-2); /*1rem = 16px, .5rem = 8px...*/
+  border-radius: var(--s-1);
   font-weight: var(--font-medium);
 }
 
@@ -426,20 +429,56 @@ rgb(85, 153, 221)
   background-color: var(--first-color-alt);
 }
 
-.button__icon{
+.button-icon{
   font-size: 1.25rem;
-  margin-left: var(--mb-0-5);
+  margin-left: var(--s-1);
   transition: .3s;
 }
 
-.button--flex{
+.button-flex{
   display: inline-flex;
   align-items: center;
 }
 
-
-
   /*--ABOUT--*/
+
+.about-img{
+  width: 200px;
+  border-radius: var(--s-1);
+  justify-self: center;
+  align-self: center;
+}
+
+.about-description{
+  text-align: center;
+  margin-bottom: var(--s-9);
+}
+
+.about-info{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--s-9);
+}
+
+.about-info-title{
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+}
+
+.about-info-name{
+  font-size: var(--smaller-font-size);
+}
+
+.about-info-title,
+.about-info-name{
+  display: block;
+  text-align: center;
+}
+
+.about-buttons{
+  display: flex;
+  justify-content: center;
+}
 
   /*----*/
 
