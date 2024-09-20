@@ -336,7 +336,7 @@ rgb(85, 153, 221)
   gap: var(--s-3);
 }
 
-.home__content{
+.home-content{
   grid-template-columns: .5fr 3fr;
   padding-top: var(--s-10);
   align-items: center;
