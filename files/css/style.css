@@ -309,7 +309,7 @@ rgb(85, 153, 221)
     font-size: var(--s-4);
   }
 
-  .nav__close{
+  .nav-close{
     position: absolute;
     right: var(--s-4);
     bottom: var(--s-3);
