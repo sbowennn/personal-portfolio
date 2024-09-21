@@ -228,10 +228,8 @@ rgb(85, 153, 221)
     margin-right: var(--s-4);
   }
   .grid{
-    display: flex; /*it was grid and no flex-direction and align-items*/
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
+    display: grid; /*it was grid and no flex-direction and align-items*/
+    gap: var(--s-5);
   }
 
   .header{
@@ -286,11 +284,11 @@ rgb(85, 153, 221)
 }
 
   .nav-list{
-    grid-template-columns: repeat(3, 1fr); /*it was 5fr*/
+    grid-template-columns: repeat(3, 5fr); /*it was 5fr*/
     gap: var(--s-6);  
   }
 
-  .nav__link{
+  .nav-link{
     display: flex;
     /*float: left;
     position: relative;*/
@@ -379,7 +377,6 @@ rgb(85, 153, 221)
   color: var(--title-color);
   font-weight: var(--font-medium);
   margin-bottom: var(--s-5);
-
 }
 
 .home-career{
@@ -430,7 +427,7 @@ rgb(85, 153, 221)
 }
 
 .button-icon{
-  font-size: 1.25rem;
+  font-size: var(--h2-font-size);
   margin-left: var(--s-1);
   transition: .3s;
 }
@@ -463,6 +460,7 @@ rgb(85, 153, 221)
 .about-info-title{
   font-size: var(--h2-font-size);
   font-weight: var(--font-semi-bold);
+  color: var(--title-color);
 }
 
 .about-info-name{
@@ -480,15 +478,15 @@ rgb(85, 153, 221)
   justify-content: center;
 }
 
-  /*----*/
+  /*--SKILLS--*/
 
-  /*----*/
+  /*--QUALIFICATIONS--*/
 
-  /*----*/
+  /*--SERVICES--*/
 
-  /*----*/
+  /*--PORTFOLIO--*/
 
-  /*----*/
+  /*--PROJECT IN MIND--*/
 
   /*----*/
 
