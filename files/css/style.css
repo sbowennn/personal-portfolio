@@ -479,6 +479,16 @@ rgb(85, 153, 221)
 }
 
   /*--SKILLS--*/
+  .skills-container{
+    row-gap: 0;
+  }
+
+  .skills-header{
+    display: flex;
+    align-items: center;
+  }
+
+  
 
   /*--QUALIFICATIONS--*/
 
