@@ -480,7 +480,7 @@ rgb(85, 153, 221)
 
   /*--SKILLS--*/
   .skills-container{
-    row-gap: 0;
+    row-gap: 12px;
   }
 
   .skills-header{
@@ -611,6 +611,51 @@ rgb(85, 153, 221)
     grid-template-columns: 1fr max-content 1fr;
     column-gap: var(--s-5);
   }
+  .qualif-title{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+  }
+
+  .qualif-subtitle{
+    display: inline-block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--s-3);
+  }
+
+  .qualif-date{
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);    
+  }
+  
+  .qualif-round{
+    display: inline-block;
+    width: var(--s-2);
+    height: var(--s-2);
+    background-color: var(--first-color);
+    border-radius: 50%;
+  }
+
+  .qualif-description{
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--first-color);
+    transform: translate(6px, -7px);
+  }
+
+  .qualif[data-content]{
+    display: none;
+  }
+
+  .qualif-active[data-content]{
+    display: block;    
+  }
+
+  .qualif-button.qualif-active{
+    color: var(--first-color);
+  }
+
+
 
   /*--SERVICES--*/
 

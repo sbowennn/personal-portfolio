@@ -46,14 +46,35 @@ skillsHeader.forEach((el) =>{
   el.addEventListener('click', toggleSkills)
 })
 
-/*--TABS --*/
+/*--QUALIF--*/
+
+const tabs = document.querySelectorAll('[data-target]'),
+    tabContents = document.querySelectorAll('[data-content]')
+
+tabs.forEach(tab =>{
+    tab.addEventListener('click', () =>{
+      const target = document.querySelector(tab.dataset.target)
+
+      tabContents.forEach(tabContent =>{
+        tabContent.classList.remove('qualif-active')
+      })
+      target.classList.add('qualif-active') 
+
+      tab.forEach(tab =>{ /** here tab is tabs? */
+        tab.classList.remove('qualif-active')
+      })
+      tab.classList.add('qualif-active')
+    })
+})
 
 /*--SERVICES--*/
 
 
-/*----*/
+/*--PORTFOLIO--*/
 
-/*----*/
+/*--SCROLL SECTIONS LINK--*/
+
+/*--BACKGROUND HEADER--*/
 
 
 /*----*/
