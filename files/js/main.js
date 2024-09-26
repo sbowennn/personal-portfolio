@@ -68,7 +68,27 @@ tabs.forEach(tab =>{
 });
 
 /*--SERVICES--*/
+const modalViews = document.querySelectorAll('.service-modal'),
+      modalButtons = document.querySelectorAll('.service-button'),
+      modalCloses = document.querySelectorAll('.service-modal-close');
 
+let modal = function(modalClick){
+  modalViews[modalClick].classList.add('active-modal');
+};
+
+modalButtons.forEach((modalButton, i) => {
+  modalButton.addEventListener('click', () => {
+    modal(i);
+  });
+});
+
+modalCloses.forEach((modalClose) => {
+  modalCloses.addEventListener('click', () => {
+    modalViews.forEach((modalView) => {
+      modalView.classList.remove('active-modal');
+    });
+  });
+});
 
 /*--PORTFOLIO--*/
 
