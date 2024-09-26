@@ -89,7 +89,7 @@ rgb(85, 153, 221)
   /*--HSL, HEX or RGB colour mode --*/
   --first-color: hsl(var(--hue-color), 85%, 53%); /**/
   --first-color-second: hsl(var(--hue-color), 67%, 60%); /**/
-  --first-color-alt: hsl(var(--hue-color), 57%, 49%); /*#3671c4*/
+  --hover-color: hsl(var(--hue-color), 57%, 49%); /*#3671c4*/
   --first-color-lighter: hsl(var(--hue-color), 92%, 85%); /*#b6d9fc*/
   --title-color: hsl(var(--hue-color), 18%, 15%); /*#1f262d*/
   --text-color: hsl(var(--hue-color), 18%, 45%); /*#5e7387*/
@@ -126,6 +126,7 @@ rgb(85, 153, 221)
   --s-8: 36px; /*2.25*/
   --s-9: 40px; /*2.5*/
   --s-10: 48px; /*3rem*/
+  --s-11: 56px; /*3.5rem*/
 
   /*--Z INDEX ??--*/
   --z-tooltip: 10;
@@ -246,19 +247,19 @@ rgb(85, 153, 221)
   .nav{
       max-width: 968px;
       height: var(--header-height);
-      display: flex;
+      display: block;
       justify-content: space-around; /*maybe leave space-between*/
       align-items: left; /*it was left*/
   }
 
   .nav-logo,
   .nav-menu{
-    color: var(--title-color);
+    color: var(--first-color);
     font-weight: var(--font-medium);   
   }
 
   .nav-logo:hover{
-    color: var(--first-color);
+    color: var(--hover-color);
   }
 
   .nav-menu{
@@ -267,12 +268,12 @@ rgb(85, 153, 221)
   }
 
   .nav-menu:hover{
-    color: var(--first-color);
+    color: var(--hover-color);
   }
 
   @media screen and (max-width: 767px){
     .nav--menu{
-      position: fixed; 
+      position: absolute; 
       bottom: -100%;
       left: 0%;
       width: 100%;
@@ -296,12 +297,12 @@ rgb(85, 153, 221)
     flex-direction:column;
     align-items: center;
     font-size: var(--small-font-size);
-    color: var(--title-color);
+    color: var(--first-color);
     font-weight: var(--font-medium);
   }
 
   .nav-link:hover{
-    color: var(--first-color);
+    color: var(--hover-color);
   }
 
   .nav-icon{
@@ -318,7 +319,7 @@ rgb(85, 153, 221)
   }
 
   .nav-close:hover{
-    color: var(--first-color-alt);
+    color: var(--hover-color);
   }
 
   /* SHOW MENU */
@@ -353,7 +354,7 @@ rgb(85, 153, 221)
 }
 
 .home-social-icon:hover{
-  color: var(--first-color-alt);
+  color: var(--hover-color);
 }
 
 .home-img{
@@ -424,7 +425,7 @@ rgb(85, 153, 221)
 }
 
 .button:hover{
-  background-color: var(--first-color-alt);
+  background-color: var(--hover-color);
 }
 
 .button-icon{
@@ -436,6 +437,21 @@ rgb(85, 153, 221)
 .button-flex{
   display: inline-flex;
   align-items: center;
+}
+
+.button-small{
+  padding: var(--s-2) var(--s-3);
+}
+
+.button-link{
+  padding: 0;
+  background-color: var(--first-color);
+  color: var(--first-color);
+}
+
+.button-link:hover{
+  background-color: transparent;
+  color: var(--hover-color);
 }
 
   /*--ABOUT--*/
@@ -656,9 +672,45 @@ rgb(85, 153, 221)
     color: var(--first-color);
   }
 
-
-
   /*--SERVICES--*/
+  .service-container{
+    gap: var(--s-5);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-content{
+    position: relative;
+    background-color: var(--container-color);
+    padding: var(--s-11) var(--s-1) var(--s-4) var(--s-5);
+    border-radius: var(--s-0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    transition: .3s;
+  }
+
+  .service-content:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+  }
+
+  .service-icon{
+    display: block;
+    font-size: var(--s-5);
+    color: var(--first-color);
+    margin-bottom: var(--s-2);
+  }
+
+  .service-title{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--s-2);
+    font-weight: var(--font-medium);
+  }
+
+  .service-button{
+    cursor: pointer;
+    font-size: var(--small-font-size);
+  }
+
+
+
 
   /*--PORTFOLIO--*/
 
