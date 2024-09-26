@@ -55,11 +55,10 @@ rgb(85, 153, 221)
 
 .header {
   font-family: "Open Sans", sans-serif;
-  font-optical-sizing:inherit;
+  font-optical-sizing: normal;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-  'width' 100;
+  font-variation-settings: normal;
   color: white;
   background-color: #5599dd;
   text-align: center;
