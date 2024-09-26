@@ -728,14 +728,14 @@ rgb(85, 153, 221)
     opacity: 0;
     visibility: hidden;
     transition: .3s;
-  }*/
+  }
 
   .service-modal-content{
     position: relative;
     background-color: var(--container-color);
     padding: var(--s-5);
     border-radius: var(--s-1);
-  }
+  }*/
 
   .service-modal-services{
     row-gap: var(--s-3);
