@@ -713,7 +713,7 @@ rgb(85, 153, 221)
     transform: translateX(var(--s-0));
   }
 
-  .service-modal{
+  /*.service-modal{
     position: fixed;
     top: 0;
     left: 0;
@@ -728,7 +728,7 @@ rgb(85, 153, 221)
     opacity: 0;
     visibility: hidden;
     transition: .3s;
-  }
+  }*/
 
   .service-modal-content{
     position: relative;
