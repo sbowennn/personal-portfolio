@@ -215,7 +215,8 @@ rgb(85, 153, 221)
   }
 
   .section-title,
-  .section-subtitle{
+  .section-subtitle,
+  .home-main{
     text-align: center;
   }
 
