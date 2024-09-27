@@ -1,7 +1,19 @@
-/*--SHOW/HIDE MENU--*/
+document.getElementById('nav-menu').addEventListener('click', function() {
+  const menu = document.getElementById('menu');
+  if (menu.style.display === 'none' || menu.style.display === '') {
+      menu.style.display = 'block';  // Show menu
+  } else {
+      menu.style.display = 'none';   // Hide menu
+  }
+});
+
+
+
+
+/*--SHOW/HIDE MENU
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close');
+      navClose = document.getElementById('nav-close'); --*/
 
 /*--SHOW--*/
 if(navToggle){

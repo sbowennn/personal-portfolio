@@ -271,7 +271,7 @@ rgb(85, 153, 221)
   }
 
   @media screen and (max-width: 767px){
-    .nav--menu{
+    .menu{
       position: absolute; 
       bottom: -100%;
       left: 0%;
