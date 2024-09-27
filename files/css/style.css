@@ -337,7 +337,7 @@ rgb(85, 153, 221)
 }
 
 .home-content{
-  grid-template-columns: .5fr 3fr;
+  grid-template-columns: repeat(2, 3fr);
   padding-top: var(--s-10);
   align-items: center;
 }
