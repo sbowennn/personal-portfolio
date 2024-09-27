@@ -285,7 +285,7 @@ rgb(85, 153, 221)
 }
 
   .nav-list{
-    grid-template-columns: repeat(3, 5fr); /*it was 5fr*/
+    grid-template-columns: repeat(6, 5fr); /*it was 5fr*/
     gap: var(--s-6);  
   }
 
