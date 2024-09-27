@@ -433,6 +433,15 @@ rgb(85, 153, 221)
   transition: .3s;
 }
 
+.button-white{
+  background-color: white;
+  color: var(--first-color);
+}
+
+.button-white:hover{
+  background-color: white;
+}
+
 .button-flex{
   display: inline-flex;
   align-items: center;
@@ -771,12 +780,74 @@ rgb(85, 153, 221)
   }
 
   /*--PORTFOLIO--*/
+  .portfolio-container{
+    overflow: initial;
+  }
 
-  /*--PROJECT IN MIND--*/
+  .project-background{
+    background-color: var(--first-color-second);
+    padding-top: var(--s-10);
+  }
 
-  /*----*/
+  .portfolio-content{
+    padding: 0 var(--s-5);
+  }
 
-  /*----*/
+  .portfolio-img{
+    width: 265px;
+    border-radius: var(--s-1);
+    justify-self: center;
+  }
+
+  .portfolio-title{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--s-1);
+  }
+
+  .portfolio-description{
+    margin-bottom: var(--s-2);
+  }
+
+  .portfolio-button:hover .button-icon{
+    transform: translateX((var(--s-0)));
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after{
+      content: '';
+  }
+
+  .swiper-portfolio-icon{
+    font-size: var(--s-7);
+    color: white;
+  }
+
+  .swiper-button-prev{
+    left: -(var(--s-1));
+  }
+
+  .swiper-button-next{
+    right: -(var(--s-1));
+  }
+
+  .swiper-container-horizontal > .swiper-pagination-bullets{
+    bottom: -(var(--s-9));
+  }
+
+  .swiper-pagination-bullet-active{
+    background-color: var(--first-color);
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next,
+  .swiper-pagination-bullet{
+    outline: none;
+  }
+
+  /*--CONTACTS--*/
+
+
+  /*--FOOTER--*/
 
   /*----*/
 

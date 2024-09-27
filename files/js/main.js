@@ -83,7 +83,7 @@ modalButtons.forEach((modalButton, i) => {
 });
 
 modalCloses.forEach((modalClose) => {
-  modalCloses.addEventListener('click', () => {
+  modalClose.addEventListener('click', () => {
     modalViews.forEach((modalView) => {
       modalView.classList.remove('active-modal');
     });
@@ -91,6 +91,21 @@ modalCloses.forEach((modalClose) => {
 });
 
 /*--PORTFOLIO--*/
+let swiper = new Swiper('.portfolio-container', {
+  cssMode: true,
+  loop: true,
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  /*mousewheel: true,
+  keyboard: true, */
+});
 
 /*--SCROLL SECTIONS LINK--*/
 

@@ -11,7 +11,7 @@
 
 
         <!-- SWIPER CSS -->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="files/css/swiper-bundle.min.css">
 
         <!-- CSS -->
         <link rel="stylesheet" href="files/css/style.css">
@@ -28,7 +28,7 @@
       <header class="header" id="header">
         <nav class="nav container" id="nav">
           <a href="#" class="nav-logo">
-            <i class="fa-solid fa-circle-arrow-up"></i>
+            <i class="fa-solid fa-circle-arrow-up nav-logo"></i>
           </a>
 
           <div class="nav--menu" id="nav--menu">
@@ -244,7 +244,6 @@
         </section>
 
         <!--QUALIFICATIONS-->
-
         <section class="qualif section">
           <h2 class="section-title"></h2>
           <span class="section-subtitle"></span>
@@ -296,6 +295,67 @@
         </section>
 
         <!--PORTFOLIO-->
+        <section class="portfolio section portfolio-background" id="portfolio">
+          <h2 class="section-title">Portfolio</h2>
+          <span class="section-subtitle">Most recent works</span>
+
+          <div class="portfolio-container container swiper-container">
+            <div class="swiper-wrapper">
+
+              <div class="portfolio-content grid swiper-slide">
+                <img src="files/img/" alt="" class="portfolio-img">
+
+                <div class="portfolio-data">
+                  <h3 class="portfolio-title">Responsive Website</h3>
+                  <p class="portfolio-description">Device Adaptable Website</p>
+                  <p class="portfolio-description">UI Components and Animated Interactions</p>
+                  <a href="#" class="button button-flex button-white portfolio-button">
+                    Take a Look
+                    <i class="fa-solid fa-book button-icon"></i>
+                  </a>
+                </div>
+              </div>                  
+      
+              <div class="portfolio-content grid swiper-slide">
+                <img src="files/img/" alt="" class="portfolio-img">
+
+                <div class="portfolio-data">
+                  <h3 class="portfolio-title">Responsive Website</h3>
+                  <p class="portfolio-description">Device Adaptable Website</p>
+                  <p class="portfolio-description">UI Components and Animated Interactions</p>
+                  <a href="#" class="button button-flex button-small portfolio-button">
+                    Take a Look
+                    <i class="fa-solid fa-book button-icon"></i>
+                  </a>
+                </div>
+              </div>
+            
+              <!-- 
+              <div class="portfolio-content grid swiper-slide">
+                <img src="files/img/" alt="" class="portfolio-img">
+
+                <div class="portfolio-data">
+                  <h3 class="portfolio-title">Responsive Website</h3>
+                  <p class="portfolio-description">Device Adaptable Website</p>
+                  <p class="portfolio-description">UI Components and Animated Interactions</p>
+                  <a href="#" class="button button-flex button-small portfolio-button">
+                    Take a Look
+                    <i class="fa-solid fa-book button-icon"></i>
+                  </a>
+                </div>
+              </div> -->
+            </div>
+            <!--ARROWS-->
+              <div class="swiper-button-next">
+                <i class="fa-solid fa-chevron-right swiper-portfolio-icon"></i>
+              </div>
+              <div class="swiper-button-prev">
+                <i class="fa-solid fa-chevron-left swiper-portfolio-icon"></i>
+              </div>
+            <!--PAGINATION-->
+              <div class="swiper-pagination"></div>
+          </div> 
+        </section>
 
         <!--SERVICES-->
         <section class="services section" id="services">
@@ -405,9 +465,43 @@
             </div>
           </div>
         </section>
+        
 
+        <!--CONTACT ME-->
+        <section class="contact section" id="contact">
+          <h2 class="section-title">Contact Me</h2>
+          <span class="section-subtitle">Get in Touch</span>
 
-        <!--CONTACTS-->
+          <div class="contact-container container grid">
+            <div>
+              <div class="contact-info">
+                <i class="fa-solid fa-envelope contact-icon"></i>
+                <div>
+                  <h3 class="contact-title">Email Me</h3>
+                  <span class="contact-subtitle">sbowennn@hotmail.com</span>
+                </div>
+              </div>
+              <div class="contact-info">
+                <i class="fa-solid fa-phone contact-icon"></i>
+                
+                <div>
+                  <h3 class="contact-title">Contact Me</h3>
+                  <span class="contact-subtitle">07444******</span>
+                </div>
+              </div>
+              <div class="contact-info">
+                <i class="fa-solid fa-location-dot contact-icon"></i>
+                <div>
+                  <h3 class="contact-title">Location</h3>
+                  <span class="contact-subtitle">London</span>
+                </div>
+              </div>
+            </div>
+            <form action="" class="contact-form grid">
+              div.contact-in
+            </form>
+          </div>
+        </section>
 
       </main>
 
@@ -419,6 +513,9 @@
       <!--SCROLL TOP-->
 
       <!--SWIPER JS-->
+      <script src="files/js/swiper-bundle.min.js">
+
+      </script>
 
       <!--MAIN JS-->
       <script src="files/js/main.js"></script>
