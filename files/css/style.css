@@ -376,6 +376,7 @@ rgb(85, 153, 221)
 
 .home-name{
   font-size: var(--big-font-size);
+  background: linear-gradient(to right, #ff1fe5 0%, #1f57ff 100%);
   color: var(--title-color);
   font-weight: var(--font-medium);
   margin-bottom: var(--s-5);
