@@ -83,7 +83,7 @@ rgb(85, 153, 221)
   color:#5599dd; 
 
   /*--COLOURS--*/
-  --hue-color: 340;
+  --hue-color: 330;
 
   /*--HSL, HEX or RGB colour mode --*/
   --first-color: hsl(var(--hue-color), 85%, 53%); /**/
@@ -156,8 +156,9 @@ rgb(85, 153, 221)
 
   *{
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    text-align: center;
+    padding: 5%;
+    margin: 5%;
   }
 
   html{
