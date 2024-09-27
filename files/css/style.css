@@ -286,7 +286,7 @@ rgb(85, 153, 221)
 }
 
   .nav-list{
-    grid-template-columns: repeat(6, 5fr); /*it was 5fr*/
+    grid-template-columns: repeat(7, 4fr); /*it was 5fr*/
     gap: var(--s-6);  
   }
 
@@ -349,6 +349,7 @@ rgb(85, 153, 221)
 }
 
 .home-social-icon{
+  grid-template-columns: repeat(2, 1fr);
   font-size: var(--s-4);
   color: var(--first-color);
 }
