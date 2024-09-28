@@ -7,12 +7,14 @@ https://fonts.google.com/ - FONTS <style>
 
 https://www.w3schools.com/colors/colors_hsl.asp - COLOURS 
  
-hsl(210, 67%, 60%) - hue color base is 210, change to 340 some time 
+hsl(210, 67%, 60%) - hue color base is 210, change to 340, 240-250 and 180 some time 
 rgb(85, 153, 221)
 #5599dd 
 
 /* */
 
+/*-----GOOGLE FONTS-----*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
 
 
 .header {
@@ -36,24 +38,21 @@ rgb(85, 153, 221)
   background-color: var(--body-color);
 }
  
- /*-----GOOGLE FONTS-----*/
- @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
-
- /*-----VARIABLES CSS-----*/
+  /*-----VARIABLES CSS-----*/
  :root {
   --header-height: 32px;
-  color:#5599dd; 
+  
 
   /*--COLOURS--*/
-  --hue-color: 310;
+  --hue-color: 240;
 
   /*--HSL, HEX or RGB colour mode --*/
   --first-color: hsl(var(--hue-color), 85%, 53%); /**/
   --first-color-second: hsl(var(--hue-color), 67%, 60%); /**/
   --hover-color: hsl(var(--hue-color), 57%, 49%); /*#3671c4*/
   --first-color-lighter: hsl(var(--hue-color), 92%, 85%); /*#b6d9fc*/
-  --title-color: hsl(var(--hue-color), 18%, 15%); /*#1f262d*/
-  --text-color: hsl(var(--hue-color), 18%, 45%); /*#5e7387*/
+  --text-color: hsl(var(--hue-color), 0%, 25%); /*#1f262d*/
+  --title-color: hsl(var(--hue-color), 18%, 45%); /*#5e7387*/
   --text-color-light: hsl(var(--hue-color), 18%, 65%); /*#96a6b6*/
   --input-color: hsl(var(--hue-color), 70%, 90%); /*#d4e6f7*/
   --body-color: hsl(var(--hue-color), 60%, 92%); /*#deebf7*/
@@ -119,8 +118,8 @@ rgb(85, 153, 221)
   *{
     box-sizing: border-box;
     text-align: center;
-    padding: 1;
-    margin: 1;
+    padding: 0;
+    margin: 0;
   }
 
   html{
@@ -921,6 +920,27 @@ rgb(85, 153, 221)
   }
 
 
-  /*----*/
+  /*--SCROLL UP--*/
+
+  .scroll-up{
+    position: fixed;
+    right: var(--s-3);
+    bottom: 90px;
+    background-color: var(--first-color);
+    opacity: .5;
+    padding: 0 var(--s-0);
+    border-radius: var(--s-1);
+    z-index: var(--z-tooltip);
+    transition: .4s;
+  }
+
+  .scroll-up:hover{
+    background-color: var(--hover-color);    
+  }
+
+  .scroll-icon{
+    font-size: var(--s-5);
+    color: white;
+  }
 
 
