@@ -44,7 +44,7 @@ rgb(85, 153, 221)
   
 
   /*--COLOURS--*/
-  --hue-color: 240;
+  --hue-color: 190;
 
   /*--HSL, HEX or RGB colour mode --*/
   --first-color: hsl(var(--hue-color), 85%, 53%); /**/
@@ -242,7 +242,7 @@ rgb(85, 153, 221)
       padding: 32px 24px 64px;
       box-shadow: 0 -1px 4px rgba(0, 0, 0, .2);
       border-radius: 24px 24px 0 0;
-      transition: all 0.7s allow-discrete;
+      transition: all 0.7s ease;
   }
 }
 
@@ -332,8 +332,10 @@ rgb(85, 153, 221)
 
 .home-svg-img{
   width: 170px;
-  border-radius: 75%;
+  border-radius: 16px;
   overflow: hidden;
+  text-align: center;
+  align-items: center;
 }
 
 .home-data{
@@ -653,12 +655,11 @@ rgb(85, 153, 221)
     color: var(--first-color);
   }
 
-  /*--SERVICES--*/
+/*--SERVICES--*/
   .service-container{
     gap: var(--s-5);
     grid-template-columns: repeat(2, 1fr);
   }
-
   .service-content{
     position: relative;
     background-color: var(--container-color);
@@ -667,34 +668,28 @@ rgb(85, 153, 221)
     box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
     transition: .3s;
   }
-
   .service-content:hover{
     box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
   }
-
   .service-icon{
     display: block;
     font-size: var(--s-5);
     color: var(--first-color);
     margin-bottom: var(--s-2);
   }
-
   .service-title{
     font-size: var(--h3-font-size);
     margin-bottom: var(--s-2);
     font-weight: var(--font-medium);
   }
-
   .service-button{
     cursor: pointer;
     font-size: var(--small-font-size);
   }
-
   .service-button:hover .button-icon{
     transform: translateX(var(--s-0));
   }
-
-  /*.service-modal{
+  .service-modal{
     position: fixed;
     top: 0;
     left: 0;
@@ -710,28 +705,23 @@ rgb(85, 153, 221)
     visibility: hidden;
     transition: .3s;
   }
-
   .service-modal-content{
     position: relative;
     background-color: var(--container-color);
     padding: var(--s-5);
     border-radius: var(--s-1);
-  }*/
-
+  }
   .service-modal-services{
     row-gap: var(--s-3);
   }
-
   .service-modal-service{
     display: flex;
   }
-
   .service-modal-title{
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
     margin-bottom: var(--s-5);
   }
-
   .service-modal-close{
     position: absolute;
     top: var(--s-3);
@@ -740,12 +730,10 @@ rgb(85, 153, 221)
     color: var(--first-color);
     cursor: pointer;
   }
-
   .service-modal-icon{
     color: var(--first-color);
     margin-right: var(--s-0);
   }
-
   /*ACTIVE MODAL*/
   .active-modal{
     opacity: 1;
@@ -782,7 +770,7 @@ rgb(85, 153, 221)
   }
 
   .portfolio-button:hover .button-icon{
-    transform: translateX((var(--s-0)));
+    transform: translateX(4px);
   }
 
   .swiper-button-prev::after,
@@ -796,15 +784,15 @@ rgb(85, 153, 221)
   }
 
   .swiper-button-prev{
-    left: -(var(--s-1));
+    left: -8px;
   }
 
   .swiper-button-next{
-    right: -(var(--s-1));
+    right: -8px;
   }
 
   .swiper-container-horizontal > .swiper-pagination-bullets{
-    bottom: -(var(--s-9));
+    bottom: -40px;
   }
 
   .swiper-pagination-bullet-active{
@@ -857,8 +845,7 @@ rgb(85, 153, 221)
   .contact-input{
     width: 100%;
     background-color: var(--input-color);
-    color: var(--text-color);
-    font-family: var(--body-color);
+    color: var(--text-color);    
     font-size: var(--normal-font-size);
     border: none;
     outline: none;
